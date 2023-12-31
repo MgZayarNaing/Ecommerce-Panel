@@ -6,7 +6,7 @@ import { index, update } from "./userSlice";
 
 export const userService = {
     store: async (payload, dispatch) => {
-        const response = await postRequest(endpoints.user, payload);
+        const response = await postRequest(endpoints.register, payload);
         await httpServiceHandler(dispatch, response);
 
         if(response.status === 200) {

@@ -3,10 +3,34 @@ import { paginateOptions } from "../../constants/config";
 export const userPayload = {
     update: {
         name: "",
-        profile: "",
         email: "",
         phone: "",
-        status : ""
+        jd: "",
+        role: "",
+        agree : "",
+        position: "",
+        password: "",
+        con_password: "",
+        annual_leave: "",
+        casual_leave: "",
+        probation_leave: "",
+        unpaid_leave: ""
+    },
+    store: {
+        name: "",
+        email: "",
+        phone: "",
+        jd: "",
+        role: "",
+        agree : "",
+        position: "",
+        password: "",
+        con_password: "",
+        annual_leave: "",
+        casual_leave: "",
+        probation_leave: "",
+        unpaid_leave: ""
+
     },
     columns: [
         { field: "id", header: "ID", sortable: true, show: true },
